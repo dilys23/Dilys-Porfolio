@@ -192,6 +192,7 @@ nav{
     display: flex;
     margin-top: 5em;
     gap: 30px;
+
 }
 .icon{
     display: flex;
@@ -200,11 +201,14 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    color:var(--first-color);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: 0.5s;
 }
 .icon:hover{
-    color: var(--first-color);
+    color: white;
+    background-color: salmon;
 }
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
@@ -384,6 +388,111 @@ h3{
     color: var(--color-white);
     z-index: 2;
 }
+/* Education Box */
+.education
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.education .education-row{
+    display: flex;
+    
+    flex-wrap: wrap;
+
+}
+
+.education-row .education-column
+{
+    flex: 1 5 15rem;
+    margin-right: 50px;
+}
+
+.education-column .title
+{
+     font-size: 20px;
+     margin: 0 0 1.5rem 2rem;  
+}
+.education-column .education-box
+{
+    border-left: .1rem solid var(--text-color-third);
+    margin-left: 20px;
+}
+
+.education-box .education-content
+{
+    position: relative;
+    padding-left: 1.8rem;
+}
+/* hộp cho content */
+.education-content .content {
+    position: relative;
+    padding: 1.1rem;
+    border: .2rem solid var(--text-color-third);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden; 
+}
+
+.education-content .content::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--text-color-third);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover::before
+    {
+        width: 100%;
+        color: white !important;
+
+}
+.education-box .education-content::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.0rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--text-color-third); 
+    border-radius: 50%;
+
+}
+
+.education-content .content .year
+{
+    font-size: 1rem;
+    color: var(--second-color);
+}
+.education-content .content .year i 
+{
+   padding-right: .5rem;
+}
+.education-content .content h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 15px;
+
+}
+
+.education-content .content p
+{
+    text-align: center;
+    font-size: 15px;
+    color: #161616;
+}
+
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
