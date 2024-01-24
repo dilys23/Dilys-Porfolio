@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- --------- UNICONS ---------- -->
+    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="assets/style.css">
@@ -11,325 +13,336 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>Portfolio | Dilysnguyen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/logo.png" />
 </head>
-<body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-            <!-- <img src="logo.png" style="margin-top: "> -->
-            <p class="nav-name">Dilys</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
-    <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>DilysNguyen</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>Experienced frontend developer with a passion for creating visually stunning
-                   and user-friendly websites.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><a href="https://www.instagram.com/dilysnguyen23/"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="https://www.linkedin.com/in/your-linkedin-profile/"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="https://www.facebook.com/profile.php?id=100016345395566"><i class="uil uil-facebook"></i></a></div>
-                <div class="icon"><a href="https://github.com/dilys23"><i class="uil uil-github-alt"></i></a></div>
-                 </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/anhle.jpg" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
-                       frameworks and libraries,which allows me to implement interactive features.
-                       Additionally, I have experirence working with UX/UI .
-                    </p>
-                    <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>ReactJS</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend (Basic)</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>JAVA</span>
-                        <span>NodeJS</span>
-                        <span>C++</span>
-                        <span>C#</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                        <span>SQL server</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       </section>
-       <!-- -------------- PROJECT BOX ---------------- -->
-       <!-- <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class=""><img src="icons8-teaching-48.png" alt=""></i>
-                <h3>Education</h3>
-                <label>I'm a third year student at Danang University of Science and Technology</label>
-            </div>
-            <div class="project-box">
-                <i class=""><img src="icons8-project-50.png" alt=""></i>
-                <h3>Project</h3>
-                <label>5+ Projects Completed</label>
-            </div>
-            <div class="project-box">
-                <i class=""><img src="icons8-certificate-70.png" alt=""></i>
-                <h3>Skills</h3>
-                <label>Intern (+2 year) </label>
-            </div>
-          </div>
-       </section>
-        -->
-       <!-- education section design  --> 
-    <section class = "education" id="education">
-        <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-        <div class = "education-row">
-            <!-- Education -->
-         <div class = "education-column">
-             <h3 class = "title" id ="education-title" ><img src="icons8-teaching-48.png" alt="" style="margin-top:-10px;width: ">  Education</h3>
-             
-             <div class = "education-box">
-                 <div class = "education-content">
-                     <div class="content"">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2022</div>
-                       <h3>Student at DUT</h3>
-                       <p>“Don’t worry if people think you’re crazy. You are crazy. You have that kind of
-                          intoxicating insanity that lets other people dream outside of the lines and become who they’re destined to be.”</p>
-                 </div>
-                 </div>
- 
-                 <div class = "education-content">
-                     <div class="content"">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2023</div>
-                       <h3>Student at DUT</h3>
-                       <p>“Only two things are infinite, the universe and human stupidity, and I’m not sure about the former. “</p>
-                 </div>
-                 </div>
- 
-                 <div class = "education-content">
-                     <div class="content"">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2023</div>
-                       <h3>Student at DUT</h3>
-                       <p> “Look up at the stars and not down at your feet. 
-                         Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.” </p>
-                 </div>
-                 </div>
-             </div>
-         </div>
-        <!-- Experience -->
-         <div class = "education-column">
-             <h3 class = "title"><img src="icons8-certificate-70.png" alt="" style="width: 50px;">Experience</h3>
-             
-             <div class = "education-box">
-                 <div class = "education-content">
-                     <div class="content">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2023</div>
-                       <h3>Software Engineer</h3>
-                       <p>“I have a naive trust in the universe – that at some level it all makes sense, and we can get glimpses of that sense if we try.”</p>
-                 </div>
-                 </div>
- 
-                 <div class = "education-content">
-                     <div class="content"">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2023</div>
-                       <h3>Software Engineer</h3>
-                       <p> “All the powers in the universe are already ours. It is we who have put our hands before our eyes and cry that it is dark.”</p>
-                 </div>
-                 </div>
- 
-                 <div class = "education-content">
-                     <div class="content"">
-                       <div class = "year"><i class='bx bxs-calendar'></i> 2021-2023</div>
-                       <h3>Software Engineer</h3>
-                       <p>“Do not feel lonely, the entire universe is inside of you.”</p>
-                 </div>
-                 </div>
-             </div>
-         </div>
-        </div>
-     </section>
- 
-       <!-- -------------- EXPLORE BOX ---------------- -->
-       <section class="section" id="projects">
-        <div class="top-header">
-            <h1>Explore me </h1>
-        </div>
-        <div class="project-container">
-          <div class="project-box">
-              <i class=""><img src="icons8-volunteer-40.png" alt=""></i>
-              <h3>Volunteer</h3>
-              <label>5+ Finished Projects</label>
-          </div>
-          <div class="project-box">
-              <i class=""><img src="icons8-photo-65.png" alt=""></i>
-              <h3>Photograph</h3>
-              <label>25+ Happy Clients</label>
-          </div>
-          <div class="project-box">
-              <i class="emojione emojione-books"><img src="icons8-books-35.png"></i>
-              <h3>Books</h3>
-              <label>Intern (+2 year) </label>
-          </div>
-        </div>
-     </section>
 
-       <!-- -------------- CONTACT BOX ---------------- -->
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: lenguyen.231203@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +84 768 816 381</p>
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <!-- <img src="logo.png" style="margin-top: "> -->
+                <p class="nav-name">Dilys</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#education" class="nav-link">Experiences</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <a href="CV_Nguyen_Thi_Le_Frontend_Devloper.pdf" download>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>DilysNguyen</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning
+                            and user-friendly websites.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Hire Me</button>
+                        <a href="assets/file/CV_Nguyen_Thi_Le_Frontend_Devloper.pdf" download>
+                            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                        </a>
+                      </div>
+                    <div class="social_icons">
+                        <div class="icon"><a href="https://www.instagram.com/dilysnguyen23/"><i
+                                    class="uil uil-instagram"></i></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/your-linkedin-profile/"><i
+                                    class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"><a href="https://www.facebook.com/profile.php?id=100016345395566"><i
+                                    class="uil uil-facebook"></i></a></div>
+                        <div class="icon"><a href="https://github.com/dilys23"><i class="uil uil-github-alt"></i></a>
+                        </div>
+                    </div>
                 </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/img/anhle.jpg" alt="avatar">
                     </div>
                 </div>
-             </div>
-          </div>
-       </section>
-    </main>
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Dilys Nguyen .</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><a href="https://www.instagram.com/dilysnguyen23/"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="https://www.linkedin.com/in/your-linkedin-profile/"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="https://www.facebook.com/profile.php?id=100016345395566"><i class="uil uil-facebook"></i></a></div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                                frameworks and libraries,which allows me to implement interactive features.
+                                Additionally, I have experirence working with UX/UI .
+                            </p>
+                            <div class="about-btn">
+                                <a href="assets/file/CV_Nguyen_Thi_Le_Frontend_Devloper.pdf" download>
+                                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>ReactJS</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend (Basic)</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>JAVA</span>
+                                <span>NodeJS</span>
+                                <span>C++</span>
+                                <span>C#</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>SQL server</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION BOX  -->
+            <section class="education" id="education">
+                <div class="top-header experiences" style="margin-top: 100px ;">
+                    <h1>Experiences</h1>
+                </div>
+                <div class="education-row">
+                    <!-- Education -->
+                    <div class="education-column column1">
+                        <h3 class="title" id="education-title"> Education</h3>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2021-2022</div>
+                                    <h3>First-year student at DUT</h3>
+                                    <p>Studied C/C++ and Computer Architecture.<br>
+                                        Implemented a matrix determinant calculator in <a
+                                            href="https://github.com/dilys23/PBL1.git">PBL1 project</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2022-2023</div>
+                                    <h3>Second-year student at DUT</h3>
+                                    <p>Explored advanced C++ & OOP and learned C# & Java.<br>
+                                        Developed a Sales Management System in <a
+                                            href="https://github.com/dilys23/PBL2---Sales-Management-System.git">PBL2
+                                            project</a> using C++ & OOP.<br>
+                                        Implemented a Motel Management System in <a
+                                            href="https://github.com/dilys23/PBL3_Main.git">PBL3 project</a> using C# &
+                                        MVC.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2023-2024</div>
+                                    <h3>Third-year student at DUT</h3>
+                                    <p>Explored the usage of UDP & TCP protocols.<br>
+                                        Developed a Live Talk website in <a
+                                            href="https://github.com/dilys23/PBL4_Client.git">PBL4 project</a> using
+                                        WebSocket and WebRTC technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience -->
+                    <div class="education-column column2">
+                        <h3 class="title">Skills</h3>
+
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2021-2022</div>
+                                    <h3>Communication Skills</h3>
+                                    <p>Obtained a certificate in basic communication, emphasizing effective teamwork and
+                                        English proficiency.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2022-2023</div>
+                                    <h3>Software Proficiency</h3>
+                                    <p>Developed skills in version control using Git and collaboration on Github.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i> 2023-2024</div>
+                                    <h3>Frontend Development Internship</h3>
+                                    <p>Gained practical experience as an intern-developer, working on frontend
+                                        development projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- -------------- EXPLORE BOX ---------------- -->
+            <section class="section" id="explore">
+                <div class="top-header">
+                    <h1>Explore me </h1>
+                </div>
+                <div class="explore-container">
+                    <div class="explore-box">
+                        <i class=""><img src="assets/icons/icons8-volunteer-40.png" alt=""></i>
+                        <h3>Volunteer</h3>
+                        <label>Participated in 5+ impactful projects</label>
+                    </div>
+                    <div class="explore-box">
+                        <i class=""><img src="assets/icons/icons8-photo-65.png" alt=""></i>
+                        <h3>Photograph</h3>
+                        <label>Captured 100+ Moments</label>
+                    </div>
+                    <div class="explore-box">
+                        <i class="emojione emojione-books"><img src="assets/icons/icons8-books-35.png"></i>
+                        <h3>Books</h3>
+                        <label>Explored the World Through 5+ Books </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: lenguyen.231203@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +84 768 816 381</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <form id="myForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+                                <div class="form-inputs">
+                                    <input type="hidden" name="access_key" value="51af8799-cfe2-4a75-abb9-9664f3b7254e">
+                                    <input name="name" required type="text" class="input-field" placeholder="Name">
+                                    <input type="text" name="email" required class="input-field" placeholder="Email">
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="message" required placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                                </div>
+                                <span id="emailError" style="color: red; font-size: 12px;"></span>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Dilys Nguyen .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#education">Experiences</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href="https://www.instagram.com/dilysnguyen23/"><i
+                            class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/your-linkedin-profile/"><i
+                            class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="https://www.facebook.com/profile.php?id=100016345395566"><i
+                            class="uil uil-facebook"></i></a></div>
                 <div class="icon"><a href="https://github.com/dilys23"><i class="uil uil-github-alt"></i></a></div>
-              
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Dilys Nguyen</a> - All rights reserved</p>
-        </div>
-    </footer>
+
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Dilys Nguyen</a> - All rights
+                    reserved</p>
+            </div>
+        </footer>
     </div>
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- ----- MAIN JS ----- -->
     <script src="assets/main.js"></script>
 </body>
+
 </html>

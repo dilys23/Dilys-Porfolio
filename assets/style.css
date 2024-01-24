@@ -5,10 +5,10 @@
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
+    --text-color-third: rgb(55, 175, 186);
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
-    --second-color: rgb(0, 201, 255);
+    --second-color:#7fc8f0;
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -339,14 +339,14 @@ h3{
     border-radius: 5px;
 }
 /* ----- PROJECTS BOX ----- */
-.project-container{
+.explore-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
-.project-box{
+.explore-box{
     position: relative;
     display: flex;
     justify-content: center;
@@ -359,16 +359,16 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
+.explore-box>i{
     font-size: 50px;
     color: #00B5E7;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
 }
-.project-box label{
+.explore-box label{
     font-size: 15px;
     color: #777;
 }
-.project-box::after, .contact-info::after{
+.explore-box::after, .contact-info::after{
     content: "";
     position: absolute;
     bottom: -100%;
@@ -378,13 +378,13 @@ h3{
     transition: .4s;
     z-index: 1;
 }
-.project-box:hover.project-box::after,
+.explore-box:hover.explore-box::after,
 .contact-info:hover.contact-info::after{
     bottom: 0;
 }
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
+.explore-box:hover.explore-box i,
+.explore-box:hover.explore-box>h3,
+.explore-box:hover.explore-box>label{
     color: var(--color-white);
     z-index: 2;
 }
@@ -408,13 +408,14 @@ h3{
 .education-row .education-column
 {
     flex: 1 5 15rem;
-    margin-right: 50px;
+    margin-right: 65px;
+    margin-top: -17px;
 }
 
 .education-column .title
 {
      font-size: 20px;
-     margin: 0 0 1.5rem 2rem;  
+     margin: 0 0 1.5rem 3rem;  
 }
 .education-column .education-box
 {
@@ -437,7 +438,8 @@ h3{
     overflow: hidden; 
 }
 
-.education-content .content::before
+
+.education-content .content::after
 {
     content: '';
     position: absolute;
@@ -448,15 +450,18 @@ h3{
     background: var(--text-color-third);
     z-index: -1;
     transition: .5s;
+    
+    
 }
 
-.education-content .content:hover::before
+.education-content .content:hover::after
     {
         width: 100%;
-        color: white !important;
-
+        background: var(--text-color-third);  
+        color: white !important;  
+        
 }
-.education-box .education-content::before
+.education-box .education-content::after
 {
     content: '';
     position: absolute;
@@ -471,11 +476,13 @@ h3{
 
 .education-content .content .year
 {
+    
     font-size: 1rem;
-    color: var(--second-color);
+    color: rgb(12, 108, 187);
 }
 .education-content .content .year i 
 {
+
    padding-right: .5rem;
 }
 .education-content .content h3{
@@ -483,15 +490,42 @@ h3{
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 15px;
+    margin-top: 5px;
 
 }
 
 .education-content .content p
 {
-    text-align: center;
+    margin-top: -10px;
+    text-align: left;
     font-size: 15px;
-    color: #161616;
+    color: #545454;
+    
 }
+.education-content .content a
+{ 
+    text-decoration: none;
+    color: #e70800;
+}
+.education-content .content a:visited
+{ 
+    text-decoration: none;
+    color: #e70800;
+    
+}
+.education-content:hover .content a,
+.education-content:hover .content .year ,
+.education-content:hover .content h3,
+.education-content:hover .content p
+{
+    color: var(--color-white);
+}
+
+.education-content:hover .content a
+{
+    color: rgb(255, 204, 198);
+}
+
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -508,9 +542,11 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+
 .contact-info>h2{
     color: var(--color-white);
     margin-bottom: 20px;
+    margin-top: -10px;
 }
 .contact-info>p{
     display: flex;
@@ -520,6 +556,7 @@ h3{
     margin-block: 5px;
 }
 .contact-info p>i{
+    margin-top:-10px;
     font-size: 18px;
 }
 .contact-info::after{
@@ -540,7 +577,7 @@ h3{
 }
 .form-inputs{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
 }
 .input-field{
@@ -551,6 +588,7 @@ h3{
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
+    margin-bottom: 8px;
 }
 textarea{
     width: 100%;
@@ -690,10 +728,10 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
-    .project-container{
+    .explore-container{
         justify-content: center;
     }
-    .project-box{
+    .explore-box{
         width: 80%;
     }
 }
@@ -702,7 +740,7 @@ footer{
     .featured-name{
         font-size: 40px;
     }
-    .project-box{
+    .explore-box{
         width: 100%;
     }
     .form-inputs{

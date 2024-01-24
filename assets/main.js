@@ -23,7 +23,7 @@ function myMenuFunction(){
   }
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Vloger","Developer"],
+    strings : ["Designer","Vlogger","Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -45,20 +45,22 @@ sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 
 /* -- PROJECT BOX -- */
-sr.reveal('.project-box',{interval: 200})
+sr.reveal('.explore-box',{interval: 200})
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-/* -- ABOUT INFO & CONTACT INFO -- */
+/* -- ABOUT INFO & CONTACT INFO -- & education */
 const srLeft = ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
   reset: true
 })
+sr.reveal('.top-header.experiences',{})
 
 srLeft.reveal('.about-info',{delay: 100})
 srLeft.reveal('.contact-info',{delay: 100})
+srLeft.reveal('.education-column.column1',{delay:400})
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
   origin: 'right',
@@ -69,7 +71,11 @@ const srRight = ScrollReveal({
 
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
+srRight.reveal('.education-column.column2',{delay:100})
 
+sr.reveal('.top-footer ',{})
+sr.reveal('footer ',{})
+sr.reveal('.footer-social-icons',{delayy: 200})
 /* ----- CHANGE ACTIVE LINK ----- */
 
 const sections = document.querySelectorAll('section[id]')
@@ -87,3 +93,16 @@ function scrollActive() {
   })
 }
 window.addEventListener('scroll', scrollActive)
+function validateForm() {
+  var emailInput = document.getElementById('myForm').elements['email'];
+  var emailError = document.getElementById('emailError');
+  var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+  if (!emailPattern.test(emailInput.value)) {
+      emailError.innerHTML = 'Invalid email format';
+      return false; // Prevent form submission
+  } else {
+      emailError.innerHTML = '';
+      return true; // Allow form submission
+  }
+}
